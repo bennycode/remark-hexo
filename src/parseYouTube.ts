@@ -2,7 +2,7 @@ type YouTubeTag = {
   id: string;
   type: 'playlist' | 'video';
   useCookies: boolean;
-}
+};
 
 export function parseYouTube(inputStr: string): YouTubeTag | null {
   const pattern = /{% youtube ([^']+)(?:\s+'([^']+)')?(?:\s+([^%]+))?\s*%}/;
@@ -13,11 +13,11 @@ export function parseYouTube(inputStr: string): YouTubeTag | null {
     const type = match[2] || 'video';
     const useCookies = match[3] || false;
 
-    return <YouTubeTag>{
+    return {
       id: youTubeId?.trim(),
       type: type.trim(),
-      useCookies: typeof useCookies === 'boolean' ? useCookies : JSON.parse(useCookies)
-    };
+      useCookies: typeof useCookies === 'boolean' ? useCookies : JSON.parse(useCookies),
+    } as YouTubeTag;
   }
 
   return null;
