@@ -61,7 +61,7 @@
     "fix": "npm run fix:format && npm run fix:lint",
     "fix:format": "npm run check:format -- --write",
     "fix:lint": "npm run check:lint -- --fix --quiet",
-    "log": "git add CHANGELOG.md && git commit -m \"docs: updated CHANGELOG.md\"",
+    "log": "git add . && git commit -am \"chore: created clean Git working directory\"",
     "postversion": "git push origin && git push origin --tags && npm publish --access public",
     "preversion": "git checkout main && git pull && npm run && npm run test && npm run dist",
     "release:major": "generate-changelog -M -x \"chore,test\" && npm run log && npm version major",
