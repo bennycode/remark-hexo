@@ -1,7 +1,10 @@
+import type {Root} from 'mdast';
 import {visit} from 'unist-util-visit';
 import {youtubeTag} from 'hexo-tag-embed/dist/tags/youtube.js';
-import type {Root} from 'mdast';
 import {parseYouTube} from './parseYouTube.js';
+import {parseAssetImg} from './parseAssetImg.js';
+
+export {parseYouTube, parseAssetImg};
 
 export default function remarkHexo(_options: {}) {
   const transformer = async (ast: Root) => {

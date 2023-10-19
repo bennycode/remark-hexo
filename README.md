@@ -4,6 +4,7 @@ A remark plugin to render [Hexo's tag plugins](https://hexo.io/docs/tag-plugins)
 
 ## Supported Hexo Tags
 
+- [`{% asset_img %}`](https://hexo.io/docs/tag-plugins#Embed-image)
 - [`{% youtube %}`](https://hexo.io/docs/tag-plugins#YouTube)
 
 **Resources**
