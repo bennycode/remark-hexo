@@ -1,7 +1,7 @@
 type AssetImg = {
   description: string;
-  filename: string,
-}
+  filename: string;
+};
 
 export function parseAssetImg(inputStr: string): AssetImg | null {
   const pattern = /{% asset_img\s+"([^"]+)"(?:\s+"([^"]+)")?\s*%}/;
@@ -13,8 +13,8 @@ export function parseAssetImg(inputStr: string): AssetImg | null {
     const description = match[2] || '';
 
     return {
+      description,
       filename,
-      description
     };
   }
 
