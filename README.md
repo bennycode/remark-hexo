@@ -7,6 +7,10 @@ A remark plugin to render [Hexo's tag plugins](https://hexo.io/docs/tag-plugins)
 - [`{% asset_img %}`](https://hexo.io/docs/tag-plugins#Embed-image)
 - [`{% youtube %}`](https://hexo.io/docs/tag-plugins#YouTube)
 
+## Troubleshooting
+
+When you're using this plugin with the [Astro web framework](https://astro.build/), you might want to turn off [SmartyPants](https://daringfireball.net/projects/smartypants/) in your Astro config file ([find out how](https://docs.astro.build/de/reference/configuration-reference/#markdownsmartypants)). This is because SmartyPants changes `{% youtube 62J_eQsK0e0 'video' true %}` into `{% youtube 62J_eQsK0e0 ‘video’ true %}` with apostrophes in the embeds.
+
 **Resources**
 
 - https://www.gatsbyjs.com/tutorial/remark-plugin-tutorial/
