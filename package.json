@@ -41,7 +41,7 @@
     "remark",
     "youtube"
   ],
-  "license": "UNLICENSED",
+  "license": "MIT",
   "main": "dist/src/index.js",
   "name": "remark-hexo",
   "private": false,
