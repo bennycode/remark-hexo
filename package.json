@@ -9,7 +9,7 @@
   },
   "description": "A remark plugin to render Hexo's tag plugins",
   "devDependencies": {
-    "@evilmartians/lefthook": "^1.5.2",
+    "@evilmartians/lefthook": "^2.0.2",
     "@tstv/eslint-config": "^4.0.0",
     "@tstv/tsconfig-common": "^3.2.1",
     "@types/node": "^18.18.5",
